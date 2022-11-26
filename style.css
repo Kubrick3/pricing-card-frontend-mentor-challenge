@@ -1,0 +1,133 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #f5f5eb;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 20px;
+}
+
+h2, h4, p{
+    margin: 0;
+}
+
+#container {
+    width: 600px;
+    height: 400px;
+    box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#top-section{
+    width: 100%;
+    height: 45%;
+    padding: 25px;
+    background-color: white;
+}
+#bottom-section{
+    width: 100%;
+    height: 55%;
+    color: white;
+}
+
+#bottom-left-section{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+    vertical-align: top;
+    background-color: #AD1BFA;
+}
+#bottom-right-section{
+    display: inline-block;
+    width: 50%;
+    padding: 25px;
+    height: 100%;
+    background-color: #E11AF0;
+    vertical-align: top;
+}
+
+#top-section h2{
+    color: #AD1BFA;
+    margin-bottom: 20px;
+}
+
+#top-section h4{
+    color: #ecf00d;
+    margin-bottom: 5px;
+}
+
+#top-section p{
+    color: #acac9f;
+}
+
+
+#price {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+button{
+    color: white;
+    background-color: #E11AF0;
+    border: none;
+    border-radius: 5px;
+    height: 25%;
+    width: 100%;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #d01add;
+    transform: scale(1.1);
+}
+
+#bottom-left-section h4{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#bottom-left-section p{
+    font-size: 0.8rem;
+    margin-bottom: 35px;
+}
+
+#price-container{
+    margin-bottom: 10px;
+}
+
+#price-frequency{
+    position: relative;
+    top: -3;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-left: 5px;
+}
+
+#price, #price-frequency{
+    display: inline-block;
+}
+
+#bottom-right-section h4{
+    margin-top: 5px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
