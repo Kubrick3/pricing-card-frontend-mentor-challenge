@@ -20,9 +20,7 @@ h2, h4, p{
     margin: 0;
 }
 
-#container {
-    width: 600px;
-    height: 400px;
+#container {  
     box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     overflow: hidden;
@@ -35,26 +33,25 @@ h2, h4, p{
     background-color: white;
 }
 #bottom-section{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 55%;
     color: white;
 }
 
 #bottom-left-section{
-    display: inline-block;
-    width: 50%;
     height: 100%;
     padding: 25px;
-    vertical-align: top;
     background-color: #AD1BFA;
+    flex-basis: 50%;
 }
+
 #bottom-right-section{
-    display: inline-block;
-    width: 50%;
-    padding: 25px;
     height: 100%;
+    padding: 25px;
     background-color: #E11AF0;
-    vertical-align: top;
+    flex-basis: 50%;
 }
 
 #top-section h2{
@@ -71,6 +68,10 @@ h2, h4, p{
     color: #acac9f;
 }
 
+#price-container{
+    display: flex;
+    margin-bottom: 10px;
+}
 
 #price {
     font-weight: 700;
@@ -86,6 +87,7 @@ button{
     width: 100%;
     font-size: 1.2rem;
     transition: 0.3s;
+    padding: 10px;
 }
 
 button:hover{
@@ -104,21 +106,14 @@ button:hover{
     margin-bottom: 35px;
 }
 
-#price-container{
-    margin-bottom: 10px;
-}
 
 #price-frequency{
-    position: relative;
-    top: -3;
     font-size: 0.8rem;
     opacity: 0.8;
     margin-left: 5px;
+    align-self: center;
 }
 
-#price, #price-frequency{
-    display: inline-block;
-}
 
 #bottom-right-section h4{
     margin-top: 5px;
@@ -130,4 +125,16 @@ ul{
     margin-top: 10px;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+@media (min-width: 576px){
+    #container {
+        width: 550px;
+        height: 400px;
+    }
+
+    #bottom-section{
+        flex-direction: row;
+    }
+
 }
